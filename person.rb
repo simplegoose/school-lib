@@ -10,6 +10,7 @@ class Person < Nameable
     parent_permission = true,
     name = 'Unknown'
   )
+    super()
     @age = age
     @id = Random.rand(1...1000)
     @name = name
@@ -32,6 +33,7 @@ end
 
 class Decorator < Person
   def initialize(person)
+    super
     @person = person
   end
 
