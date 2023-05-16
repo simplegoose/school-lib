@@ -75,7 +75,6 @@ Clone this repository to your desired folder:
   cd my-folder
   git clone  https://github.com/simplegoose/school-lib.git
 ```
--
 
 ### Install
 
@@ -85,7 +84,6 @@ Install this project with:
   cd my-project
   gem install or bundle install
 ```
--
 
 ### Usage
 
@@ -113,7 +111,7 @@ To run tests, run the following command:
 
 👤 **Author1**
 
-- GitHub: [@simplegoose](https://github.com/githubhandle)
+- GitHub: [@simplegoose](https://github.com/simplegoose)
 - LinkedIn: [Timothy Njoroge](https://linkedin.com/in/timothy-njoroge-mwangi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
