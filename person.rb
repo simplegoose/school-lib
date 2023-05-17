@@ -1,3 +1,5 @@
+require_relative './rental'
+
 class Nameable
   def correct_name
     raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
@@ -27,6 +29,10 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def add_rental(date, book)
+    Rental.new(date, book, self)
   end
 
   private
