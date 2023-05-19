@@ -68,10 +68,3 @@ class TrimmerDecorator < Decorator
     @nameable.correct_name[0...10]
   end
 end
-
-person = Person.new(18, false, 'alex campaneer')
-decorated_person = CapitalizeDecorator.new(person)
-trimmed_person = TrimmerDecorator.new(decorated_person)
-
-p decorated_person.correct_name
-p trimmed_person.correct_name
