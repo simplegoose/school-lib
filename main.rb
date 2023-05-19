@@ -18,11 +18,12 @@ class App
       '3' => :create_person,
       '4' => :create_book,
       '5' => :create_rental,
-      '6' => :list_rentals,
-      '7' => :exit_app
+      '6' => :list_rentals
     }
 
-    if options[user_selected_option]
+    if user_selected_option == '7'
+      exit_app
+    elsif options[user_selected_option]
       @app_logic.send(options[user_selected_option])
     else
       print 'Please enter a valid option: '
@@ -49,6 +50,12 @@ class App
     option = gets.chomp
 
     run_option(option)
+  end
+
+  private
+
+  def exit_app
+    exit 1
   end
 end
 

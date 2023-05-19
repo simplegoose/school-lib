@@ -70,10 +70,6 @@ class AppLogic
     end
   end
 
-  def exit_app
-    exit 1
-  end
-
   private
 
   def create_teacher
